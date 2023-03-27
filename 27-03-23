@@ -41,8 +41,17 @@ bitwise operwtors works on 32 bits
 ~:-NOT
 ^:-XOR
 <<:- Left Side
+This is a zero fill left shift. One or more zero bits are pushed in from the right, and the leftmost bits fall off:
+console.log(5<<1);
+output:-10
 >>:- Right Side
+This is a sign preserving right shift. Copies of the leftmost bit are pushed in from the left, and the rightmost bits fall off:
+
+console.log(5>>1);
+output:-2
 >>>:- unsign Right Side
+its very similar to right side method amy times and operations output is same
+This is a zero fill right shift. One or more zero bits are pushed in from the left, and the rightmost bits fall off:
 What Is And operators
 aba AND b
 0  	0	  0
