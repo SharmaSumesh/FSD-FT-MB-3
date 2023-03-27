@@ -3,7 +3,7 @@ the type of operator is used to get the data type of its operand data
 the operand can be either a literal or a data structure such as a variable
 Syntax:- typeof(operand)
 example:- var a = "Hello";
-console.log(type of(a));
+console.log(typeof(a));
 output:-String
 example:- var a = 22;
 console.log(type of(a));
@@ -45,26 +45,26 @@ bitwise operwtors works on 32 bits
 >>>:- unsign Right Side
 What Is And operators
 aba AND b
-0	0	0
-0	1	0
-1	0	0
-1	1	1
+0  	0	  0
+0	  1	  0
+1	 0	  0
+1 	1  	1
 question:- 0101 and 0001 
 output:- 0001
 
 
 OR operators
 a     b      ab
-0	0	0
-0	1	1
-1	0	1
-1	1	1
+0	   0	     0
+0	   1	     1
+1	   0	     1
+1	   1	     1
 XOR operators
 a   b       ab
-0	0	0
-0	1	1
-1	0	1
-1	1	0
+0	   0	    0
+0	   1    	1
+1	   0	    1
+1	   1	    0
 
 NOT operators
 it changes the value like 0->1 1->1
