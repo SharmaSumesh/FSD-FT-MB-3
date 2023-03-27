@@ -1,0 +1,122 @@
+// what is typeof
+the type of operator is used to get the data type of its operand data
+the operand can be either a literal or a data structure such as a variable
+Syntax:- typeof(operand)
+example:- var a = "Hello";
+console.log(type of(a));
+output:-String
+example:- var a = 22;
+console.log(type of(a));
+output:-Number
+example:- var a = true;
+console.log(type of(a));
+output:-Boolean
+//what is undefine
+the undefined type is used for variable object properties either do not exist
+or have assigned a value;
+
+             Example:-var a;
+console.log(a);
+output:-undefine
+Type conversion:-
+Type conversion in js means converting data type to another data type
+Converting Numbers to Strings
+Example:-    var a = 3;
+var b = String(a);
+console.log(typeof(b));
+Converting Booleans to Numbers
+var a = "true";
+var b = Number(a);
+console.log(typeof(b));
+Converting Numbers to Booleans
+var a = 4;
+var b = Boolean(a);
+console.log(typeof(b));
+Bitwise operators
+Bitwise operators work on bits 
+bitwise operwtors works on 32 bits
+
+&:-AND
+|:-OR
+~:-NOT
+^:-XOR
+<<:- Left Side
+>>:- Right Side
+>>>:- unsign Right Side
+What Is And operators
+aba AND b
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+question:- 0101 and 0001 
+output:- 0001
+
+
+OR operators
+a     b      ab
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+XOR operators
+a   b       ab
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+
+NOT operators
+it changes the value like 0->1 1->1
+Exaple:-0101->1010
+Zero-fill left shift(<<)
+Regex :-
+A regex means Regular Expression
+Regular Expression is pattern of charactoreies
+for example:-
+let a = "my name is sumesh"
+let pattern  = "sumesh;
+let result = a.match(pattern);
+console.log(result);
+output:-return the index otherwise null (null means no found);
+let reg = /Sumesh/; // This is a regular expression literal in js
+reg = /Sumesh/g; // g means global
+// reg = /Sumesh/i; // i means case insensitive
+
+// console.log(reg);
+// console.log(reg.source);
+
+let s = "hi my name i Sumesh and Sumesh";
+// Functions to match expressions
+// 1. exec() - This function will return an array for match or null for no match
+let result = reg.exec(s);
+// result = reg.exec(s);
+// console.log(result);
+// result = reg.exec(s);
+// console.log(result); ---> We can use multiple exec with global flag
+
+
+
+// 2. test() - Returns true or false
+let result2 = reg.test(s);
+// console.log(result2); --> This will only print true if the "reg" is there in the string "s"
+
+// 3. match() - It will return an array of results or null
+// let result3 = reg.match(s) ---> This is wrong!!
+let result3 = s.match(reg) // ---> This is right
+// console.log(result3);
+
+// 4. search() - Returns index of first match else -1
+// let result4 = reg.search(s) ---> This is wrong!!
+let result4 = s.search(reg) // ---> This is right
+// console.log(result4);
+
+// 5. replace() - Returns new replaced string with all the replacements (if no flag is given, the first match will be replaced)
+
+let result5 = s.replace(reg, 'Rahul');
+console.log(result5);
+
+
+
+
+
