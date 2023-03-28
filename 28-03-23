@@ -1,0 +1,117 @@
+Error in Js :-
+sometimes we see error in console some problem are diffcult to learn and sumaries
+we reduces this problem we used try and catch method
+try
+{
+catch()
+{
+}
+ex:-
+a;
+we check in console we found some error then we used try and catch method
+try
+{
+console.log("try this");
+a;
+console.log("End this");
+}
+catch
+{
+console.log("Error");
+}
+
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error.
+name:-what is name of error like referenace error
+message :-what message show in console
+stack:-total message with line to line
+exampel:-
+try
+{
+a;
+}
+catch(error)
+{
+console.log(error.name);
+console.log(error.message);
+console.log(error.stack);
+}
+what is referenace error
+there seven type of error in js
+EvalError	An error has occurred in the eval() function
+
+RangeError	A number "out of range" has occurred
+A RangeError is thrown if you use a number that is outside the range of legal values.
+
+
+ReferenceError	An illegal reference has occurred
+A ReferenceError is thrown if you use (reference) a variable that has not been declared:
+SyntaxError	A syntax error has occurred
+A SyntaxError is thrown if you try to evaluate code with a syntax error.
+TypeError	A type error has occurred
+A TypeError is thrown if you use a value that is outside the range of expected types:(change type)
+URIError	An error in encodeURI() has occurred
+url wrong
+
+Example:-
+try
+{
+a;
+}
+catch(error)
+{
+if(error instanceof ReferenceError)
+{
+console.log("yes");
+}
+else
+{
+console.log("other error");
+}
+}
+Scope in Js:-
+Scope is a concept that refers to where values and functions can be accessed.
+JavaScript has 3 types of scope:
+
+Block scope
+Function scope
+Global scope
+Block Scope:-
+Before ES6 (2015), JavaScript had only Global Scope and Function Scope.
+
+ES6 introduced two important new JavaScript keywords: let and const.
+
+These two keywords provide Block Scope in JavaScript.
+
+Variables declared inside a { } block cannot be accessed from outside the block:
+Example:-
+{
+  let x = 2;
+}
+Function Scope :-
+JavaScript has function scope: Each function creates a new scope.
+
+Variables defined inside a function are not accessible (visible) from outside the function.
+
+Variables declared with var, let and const are quite similar when declared inside a function.
+Exampe:-
+unction myFunction() {
+  var carName = "Volvo";   // Function Scope
+}
+Global JavaScript Variables
+A variable declared outside a function, becomes GLOBAL.
+Ex:-
+let carName = "Volvo";
+use Strict mode:-
+The "use strict" directive was new in ECMAScript version 5.
+
+It is not a statement, but a literal expression, ignored by earlier versions of JavaScript.
+
+The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+
+With strict mode, you can not, for example, use undeclared variables
