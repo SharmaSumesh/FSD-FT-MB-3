@@ -1,0 +1,189 @@
+Object defination:-
+1)key value pair
+An object is a collection of related data and/or functionality.
+ These usually consist of several variables and functions 
+(which are called properties and methods when they are inside objects)
+how to put array in obj:-
+const a = {firstName:"sumesh",
+lastName:"sharma",
+age:24,
+country:"inida",
+    mycar:["bhw","scorpio","verna"]
+};
+console.log(a.mycar[1]);
+how to put the function in object:-
+const a = {firstName:"sumesh",
+lastName:"sharma",
+age:24,
+country:"inida",
+    mycar:["bhw","scorpio","verna"],
+    housenum:function()
+    {
+        return 555; 
+    }
+};
+console.log(a.housenum());
+second Method of cration of object:-
+var a = new Object(); //object constructor Method
+a.first = "sumesh";
+a.lastname = "sharma";
+// console.log(a.first);
+// ok one more method call the value is 
+console.log(a['first']);
+Third method:-
+var a = {}; //object literal
+a["first"] = "Sumesh";
+a["last"] = "Sharma";
+console.log(a.first);
+ Object Properties
+:-Properties are the values associated with a JavaScript object.
+
+A JavaScript object is a collection of unordered properties.
+
+Properties can usually be changed, added, and deleted, but some are read only.
+
+This keyword:-
+we use this keyword in most of language
+the js this keyword refer to the object it belongs to
+it has different values depending on where it is used
+it refer the globl object
+ex:- console.log(this); 
+it method this refer to the owner object
+Ex:-const a = {name:"sumesh",lname:"sharma"
+    ,sum :function()
+    {
+        var add = 33+22;
+        console.log(add);
+        console.log(this)
+    }
+};
+console.log(a.sum());
+JavaScript Accessors (Getters and Setters):-
+ECMAScript 5 (ES5 2009) introduced Getter and Setters.
+
+Getters and setters allow you to define Object Accessors (Computed Properties).
+
+
+the main use of getter and setters are manipulate the data 
+Ex:-   getter ex:-
+  how to captial the name
+without getter:-
+var person = { 
+name:"sumesh",
+age:25
+}
+console.log(person.name.toUpperCase());
+with getter:-
+var person = { 
+name:"sumesh",
+age:25,
+get getdata()
+{
+
+    return this.name.toUpperCase();
+}
+}
+
+console.log(person.getdata);
+setter method:-
+setter are used to set the data
+Ex:-before setter
+const a = {first:"sumesh",lanme:"sharma"};
+a.first = "rahul";
+console.log(a);
+after setter
+const person = {
+    name:"Sumesh",
+    lname:"sharma",
+    set setname(n)
+    {
+        this.name = n.toUpperCase();
+    }
+};
+person.setname = "Rahul"
+console.log(person);
+
+
+
+
+
+
+we know how to acces the object we simple write console.log(name of object(property name));
+Ex:-
+ 
+
+
+
+
+Objects written as name value pairs are similar to:
+
+Associative arrays in PHP
+Dictionaries in Python
+Hash tables in C
+Hash maps in Java
+Hashes in Ruby and Perl
+
+Creating a JavaScript Object
+With JavaScript, you can define and create your own objects.
+
+There are different ways to create new objects:
+
+Create a single object, using an object literal.
+Create a single object, with the keyword new.
+Define an object constructor, and then create objects of the constructed type.
+Create an object using Object.create().
+Using an Object Literal
+This is the easiest way to create a JavaScript Object.
+
+Using an object literal, you both define and create an object in one statement.
+
+An object literal is a list of name:value pairs (like age:50) inside curly braces {}.
+
+The following example creates a new JavaScript object with four properties:
+
+Example
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+Spaces and line breaks are not important. An object definition can span multiple lines:
+
+Example
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+This example creates an empty JavaScript object, and then adds 4 properties:
+JavaScript Object Constructors:-
+Ex:-
+// var person = {
+//     firstName:"sumesh",
+//     lastname:"kumar"
+//     age:24
+// }
+// var person2 = {
+//     firstName:"Rahul",
+//     lastname:"Sharma"
+//     age:23
+// }
+function Person(first,last,age)
+{
+    this.first = first;
+    this.last = last;
+    this.age = age;
+}
+var person1 = new Person("Sumesh","kumar",25);
+console.log(person1);
+1)It is considered good practice to name constructor functions with an upper-case first letter.
+
+how to update:-
+function Person(first,last,age)
+{
+    this.first = first;
+    this.last = last;
+    this.age = age;
+}
+var person1 = new Person("Sumesh","kumar",25);
+
+person1.city = "Delhi";
+console.log(person1);
+
