@@ -1,0 +1,139 @@
+// const a = new Map([["sumesh",2],["Rahul",4],["Amit",6]])
+// console.log(typeof(a));
+// console.log(a);
+// console.log(a.size);
+// const b = {name:"sumesh"};
+// console.log(b);
+// Object.keys(obj).length
+// class Map
+// class Map is other way to create the object map is advance version of object the
+// data type of map is object
+// const b = new Map([[],[]]); {}
+// console.log(typeof(b));
+// ex:-
+// const perinfo = new Map([[sumesh], [nikhil],[akshey]])
+// console.log(perinfo);
+// const student= new Map([["name","sumesh"],["name","nikhil"],["name","Akshay"]]);
+// console.log(student);
+//second method
+// const data = new Map();
+// data.set("sumesh",003);
+// data.set("nikhil",334);
+// console.log(data);
+// data.set("name","Amit");
+// console.log(data);
+// const data = new Map();
+// data.set("sumesh",000001);
+// console.log(data);
+// console.log(data.get("sumesh"));
+// Question:- make object using second method put mobile number
+// output:- {person=>93248u9324532,person2=>212545}
+// Osama Bin Tarique
+// 11:18 AM
+// const x = new Map([["Person","9854126"],["Person1","5446664"],["Person2","534534534"]]);
+// console.log(x);
+// Syed naqi baquar abidi
+// const data1 = new Map();
+// data1.set ("sumesh",656465465764455);
+// data1.set ("nikhil",6564654455455);
+// data1.set ("ajay",6564654674455);
+// console.log(data1);
+// data1.delete("sumesh");
+// console.log(data1);
+// data1.clear();
+// function 
+// js function are used to perform operations 
+// we can call js function many times to reuse the Code
+// var a = 3;
+// var b = 4;
+// var add = a+b;
+// console.log(add);
+// var c = 5;
+// var d = 6;
+// var add1 = c+d;
+// // console.log(add1);
+// first method:-
+// console.log("Hello world");
+// console.log("Helllo world"); //space
+// second Method:-
+// for(let i=0;i<3;i++) //time 
+// {
+//     console.log("Hello world");
+// }
+// function a()
+// {
+//     console.log("Hello world")
+// }
+// a(); // calling the function 
+// a();
+//  function Expressions
+// a function Expressions define as the stored the function in one 
+// varible and call the varible
+// let x = function()
+// {
+//     console.log("Hello");
+// }
+// x();
+// let x = function(a,b)
+// {
+//     return a+b;
+// }
+// console.log(x(4,3));
+// Anonymous function
+// Ex:-1
+// let x = function()
+// {
+//     console.log("Hello");
+// }
+// x();
+// setTimeout(function()
+// {
+//     console.log("Hello")
+// },1000 =>1
+// Arrow function 
+// Arrow function come in es6 in 2015 version  the main use of arrow function is 
+// short the synatx 
+// and return ketword 
+// noraml function 
+// function a()
+// {
+//     console.log("Hello");
+// }
+//Arrow function
+
+// const a = ()=>{
+//     console.log("Hello")
+// 
+// function a()
+// {
+//     var add = 3+4;
+// }
+// a();
+//Arrow funcction 
+// const a = ()=>
+// {
+//     return 3+4;
+// }
+// parmeters
+// parmeters that  name of listed passed to function when we function define
+// function a(a,b,c)
+// {
+//     return a+b+c;
+// }
+// console.log(a(2,3));
+// Arguments
+// Arguments are the real passed to function when we call it
+// some rules of parmeters
+//1) we not pass any data types in when function define
+// 2) js function do not check the number of arguments recevied
+// function b(a,b,c)
+// {
+//     return a+b+c;
+// }  
+// console.log(b(2,3,"sumesh"));
+// // default values
+// function c(a1,b1=4)
+// {
+//     return a1+b1;
+// }
+// console.log(c(4));
