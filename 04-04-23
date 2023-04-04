@@ -1,0 +1,153 @@
+// 1)write a pogram to check true  if one of the number is 100 if the sum 
+// of two number is 100 using Arrow function
+// function test50(x, y)
+// {
+// return ((x == 50 || y == 50) || (x + y == 50));
+// }
+// console.log(test50(50, 50))
+// console.log(test50(20, 50)) 20+50 = 70
+// console.log(test50(20, 20))
+// console.log(test50(20, 30))
+// const check100 = (num1, num2) => num1 === 100 || num2 === 100 || 
+// (num1 + num2) === 100;
+
+// console.log(check100(50, 50));
+// console.log(check100(100, 0));
+// console.log(check100(30, 70));
+// console.log(check100(40, 50));
+// const a = (c,d) =>
+// {
+//     if(c+d==100)
+//     {
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(a(12,88)); //100
+// console.log(a(50,40)); //90
+// str = "index.html"
+// html
+// str1 = "svript.js"
+// js
+// const a=(str)=>
+//     str.slice(str.lastIndexOf('.'));
+
+// console.log(a('index.html'));
+// console.log(a('pattern.java'));
+// const getExtension = (filename) => {
+//     return filename.split('.').pop();
+//     }
+    
+//     console.log(getExtension('example.html'));
+//     console.log(getExtension('example.js'));
+// 3)write a pogram to get time and data
+// function time()
+// {
+//     const data = new Date();
+//     const days = data.getDay();
+//     const month = data.getMonth();
+//     const year = date.getFullYear();
+//     console.log(days,month,year);
+// }
+// time();
+// Am and Pm
+// const data = new Date();
+// console.log(data.toLocaleString('en-us',{hours:'numeric',minute:
+// 'numeric',hour12:true}));
+    // const data = new Date();
+    // const hour = data.getHours();
+    // const min = data.getMinutes();
+    // console.log(hour);
+    // console.log(min);
+    //if(hour>11)
+    // {
+    //     console.log("AM")
+    // }
+    // else
+    // {
+    //     console.log("PM")
+    // }
+    // 4)write a pogram extract the first half of string //car24
+    // const half=(str)=>str.slice(0,str.length/2);
+    // console.log(half("sumes"));
+    
+    // write a pogram to check the array is arrange in ascending or not
+    // ex:- let arr = [1,2,3,4]  //return true;
+    // let arr2 = [1,2,4,3]; // return false;
+//     const a = (arr)=>{
+//         for(let i=0;i<arr.length;i++)
+//         {
+//             if(arr[i+1]<arr[i])
+//             {
+//                 return false;
+//             }
+          
+//         }
+//         return true;
+//     }
+// console.log(a([1,2,3,4]));
+// console.log(a([1,4,5,3]));
+
+// Object question
+// 1)Write a JavaScript program to get the length of a JavaScript object.
+
+// var student = {
+// name : "David Rayy",
+// class : "VI",
+// rollno : 12 };
+// var len = Object.keys(student).length;
+// console.log(len);
+// 2) var library = [
+//     {
+//     title: 'Bill Gates',
+//     author: 'The Road Ahead',
+//     readingStatus: true
+//     },
+//     {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     readingStatus: true
+//     },
+//     {
+//     title: 'Mockingjay: The Final Book of The Hunger Games',
+//     author: 'Suzanne Collins',
+//     readingStatus: false
+//     }];
+//     print the tittle 
+// var library = [
+//     {
+//     title: 'Bill Gates',
+//     author: 'The Road Ahead',
+//     readingStatus: true
+//     },
+//     {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     readingStatus: true
+//     },
+//     {
+//     title: 'Mockingjay: The Final Book of The Hunger Games',
+//     author: 'Suzanne Collins',
+//     readingStatus: false
+//     }];
+//     for(let i = 0;i<library.length;i++){
+//     str=library[i].title;
+//     console.log(str);
+    // }
+    // let a =  {
+    //         title: 'Steve Jobs',
+    //         author: 'Walter Isaacson',
+    //         readingStatus: true
+    //         }
+    //         let b =  {
+    //                 title: 'Steve Jobs',
+    //                 author: 'Walter Isaacson',
+    //                 readingStatus: true
+    //                 }
+    //       console.log(a===b);          
+    // console.log(2=="2"); // == check the value
+    // console.log(2==="2"); // === check the data types of values
+    // console.log("true"==true);
+    // console.log(true===true);
+
+    
