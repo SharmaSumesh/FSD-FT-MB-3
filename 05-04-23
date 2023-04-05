@@ -1,0 +1,286 @@
+// call:-the call method calls the function directly and set this to the first
+// arguments passed to the call method and if any other sequence of arguments
+// preceding the first arguments are the passed to the call method then they are passed
+// as an arrguments to the function
+// let user = {
+//     name:"sumesh",
+//     age:24,
+//     city:"delhi" ,
+//     p:function()
+//     {
+//         console.log(this.name);
+//     }
+    
+// }
+// user.p();
+// let user2 = {
+//     name:"ram",
+//     age:34,
+//     city:"Bhiwani",
+  
+// }
+// p.call(user2);
+// user.p.call(user2);
+// let user = {
+//     name:"sumesh",
+//     age:24,
+//     city:"delhi" ,
+//     p:function()
+//     {
+//         console.log(this.name);
+//         console.log(this.age);
+//     }
+// }
+// user.p();
+// let user2 = {
+//     name:"ram",
+//     age:25,
+//     city:"delhi" 
+// }
+// let user3 = {
+//     name:"Rohit",
+//     age:25,
+//     city:"delhi" 
+// }
+// user.p.call(user2);
+// user.p.call(user3);
+// let obj =  {name:"sumesh",age:34}
+// let check = function()
+// {
+//     console.log(this.name);
+// }
+// check.call(obj); // check is name of function obj object object name
+
+// let obj2 = {name:"rohit",age:20};
+// check.call(obj2);
+// Question:-make three object (name,age,city) and make function on second object 
+// call name,age and city using only one function
+// let user1 = {name:"Rohit",
+//     age:25,
+// city:"delhi" }
+// let user2 = {name:"sumesh",
+//     age:25,
+//     city:"Hisar",
+//     p:function()
+//     {
+//         console.log(this.name);
+//         console.log(this.age);
+//         console.log(this.city);
+//     }
+//  }
+//  user2.p();
+
+//     let user3 = {name:"Anil",
+//     age:25,
+//     city:"Bhiwani" }
+//     user2.p.call(user3);
+//     user2.p.call(user1);
+// Apply:-
+// let  user1 = {name:"sumesh",age:24,city:"Delhi"};
+// let p = function(country)
+// {
+//     console.log(this.name+" "+country);
+// }
+// p.call(user1,"India");
+// let user2 = {name:"rohit",age:34,city:"bhiwani"}
+// p.call(user2,"UK");
+// let  user1 = {name:"sumesh",age:24,city:"Delhi"};
+// let p = function(state,country)
+// {
+//     console.log(this.name+" "+country+" "+state);
+// }
+// // p.call(user1,"India","Haryana");
+// // let user2 = {name:"rohit",age:34,city:"bhiwani","punjab"}
+// p.apply(user1,["delhi","India"]);
+// let user2 = {id:12,name:"sumesh"};
+// let upate = function(age,city,country,state)
+// {
+// console.log(this.name+" "+age+" "+city+" "+country+" "+state)
+// }
+// upate.apply(user2,[23,"bhiwani","India","HAryna"])
+// bind:-
+// bind is very similar to the call in bind methid cretes a new function and when that new function
+// and that new function is called it set this key to the first arguments
+// which is passed to the bind method
+//call ex:-1
+// let user1 = {name:"Rohit",
+//     age:25,
+// city:"delhi" }
+// let  p  = function(state,country)
+// {
+//     console.log(this.name+" "+state+" "+country)
+// }
+// p.call(user1,"Haryana","india");
+
+// //bind ex:2
+// let user2= {name:"Amit",
+//     age:27,
+// city:"delhi" }
+// let  p2 = function(state,country)
+// {
+//     console.log(this.name+" "+state+" "+country)
+// }
+// let x = p2.bind(user2,"Punjab","UK");
+// x();
+// let obj1 = {name:"Kapil"};
+// let obj2 = {name:"Amit",sayhello:function()
+// {
+//     console.log(this.name);
+// }}
+// let find = obj2.sayhello.bind(obj1);
+// find();
+
+// Closure:-
+// closure in js provides the access to outer scope of a function from inside
+// the inner function every after the outer closure is lexical scope
+// or
+// a closure is a inner function that has access to the ouetr function
+// var i=12;
+// function a()
+// {
+//     //creting closure
+//     var j = 20;
+//     console.log(i);
+//     console.log(j);
+// }
+// a();
+// function show() /// outer function
+// {
+//     console.log("hi");
+//     function show2() /// inner function
+//     {
+//         console.log("Hello");
+
+//     }
+//     show2();
+// }
+// show();
+// function show() // outer function
+// {
+//     var i = "my name is sumesh";
+//     function innerfunction() // this is my inner function 
+//     {
+//         var  k=  "Rajshri"
+//         console.log(i);
+//         console.log(k);
+//     }
+//     innerfunction();
+// }
+// show();
+// var x = 4;
+// function foo()
+// {
+//     var y = 5;
+//     function b()
+//     {
+//         var z = 10;
+//         var out = x+y+z;
+//         return out;
+//         console.log(out);
+//     }
+//     return b;
+// }
+// console.log(foo());
+// function a()
+// {
+//     let c = 0;
+//     return ()=>{
+//         return c+1; 
+//     }
+
+// }
+// let count  = a(); // function expressions
+// console.log(count()); 
+// var x =2;
+// function b()
+// {
+// var y =2;
+// function c()
+// {
+// var z =2;
+// var out = x+y+z;
+// console.log(out);
+// }c();
+// }
+// b();
+// callback:-
+// a callback function is a function passed into another function as an arguments which invoked inside 
+// the outer function to complete some kind of routine action
+// function show()
+// {
+//     console.log("hello");
+// }
+// function s(callback)
+// {
+//     callback();
+// }
+// s(show);
+// ex:2)
+// function show(a)
+// {
+//     console.log("my name is sumesh"+a );
+// }
+// function data(callback)
+// {
+//     var a = 100;
+//     callback(a);
+// }
+// data(show);
+// function show(callback)
+// {
+//     var a = 100;
+//     callback(a);
+// }
+// function show2(a)
+// {
+//     console.log("my name is "+a);
+// }
+
+// show2(show);
+// Promise:- A Promise is an object represnt the evental 
+// completion or failure of an async operation
+// promise state:-
+// there are three state in promise:-
+// 1)fullfilled :-Promise is complete
+// 2)Rejected :- Promise Rejected
+// 3)pedning :-Promise in Intial state
+// 1)fullfilled:- .then and .finally
+// 2)Rejected:-.then .catch and .finally
+// Synatx of creating Promise:-
+// const promisename = new Promise((resolve,reject)=>{
+//     resolve(value) //what is output
+//     reject(error)// error in code
+// })
+// const promiseobj = new Promise((resolve,reject)=>{
+//     let req = "1true"
+//     if(req===true)
+//     {
+//         resolve("Request suucess");
+//     }
+//     else
+//     {
+//         reject("request is rejected");
+//     }
+// })
+// promiseobj.then((value)=>{console.log(value);},
+// (error)=>{
+//     console.log(error);
+// },
+// );
+const a = new Promise((resolve,rejected)=>{
+    let a = "2";
+    if(2===a)
+    {
+        resolve("ok");
+    }
+    else
+    {
+        rejected("no match")
+    }
+});
+a.then((value)=>{
+    console.log(value);},
+    (error)=>{
+     console.log(error);   
+    },
+)
