@@ -1,0 +1,160 @@
+//Promise:-
+// const promisea = new Promise((reject,resolve)=>{
+//     // Do oprations
+//     resolve(value)
+//     reject(Error)
+// })
+// Then method:-
+// like my Pormise is fullfilled and rejected we use use then in both condition
+// resolve:- a function called if the promoise is fulfilled
+//reject:-  a function called if the promoise is rejected
+// catch method:-
+// the catch method return  a promise and deal with rejected case only
+//finally method:-
+// the finally method return a promise when   the promise is settled i.e either 
+// fulfilled or rejected  
+// ex:-1)
+// const promiseobj = new Promise((resolve,reject)=>{
+//     let r = 2;
+//     if(r==true)
+//     {
+//         resolve("Requested success");
+//     }
+//     else
+//     {
+//         reject("Rejected");
+//     }
+
+// }).then((value)=>{
+//     console.log(value);
+// }).catch((error)=>{console.log(error);})
+// with finally
+// const obj2 = new Promise((resolve,reject)=>{
+//     let s = "Sumesh"
+//     if(s =="sumesh")
+//     {
+//         resolve("ok");
+//     }
+//     else
+//     {
+//         reject("not match")
+//     }
+// }).then((value)=>{console.log(value);}).
+// catch((error)=>{console.log(error);}).
+// finally((value)=>{console.log("cleaned")})
+// Quetion:- a= 2, b =3, sum = 5 if(a+b = sum) then resolve otherwise it rejected
+// Solution osma:-
+// const obj2 = new Promise((resolve,reject)=>{
+//     let a = 2;
+//     let b = 6;
+//     let sum = 5;
+//     if(sum == a+b)
+//     {
+//     resolve("Resolved");
+//     }
+//     else
+//     {
+//     reject("Rejected")
+//     }
+//     }).then((value)=>{console.log(value);}).
+//     catch((error)=>{console.log(error);}).
+//     finally((value)=>{console.log("cleaned")})
+// const obj2 = new Promise((resolve,reject)=>{
+//     let a =2;
+//     let b=3;
+//     let sum=5;
+//     if((a+b)==sum)
+//     {
+//     resolve("ok");
+//     }
+//     else
+//     {
+//     reject("not match")
+//     }
+//     }).then((value)=>{console.log(value);}).
+//     catch((error)=>{console.log(error);}).
+//     finally((value)=>{console.log("cleaned")})
+// Synchronous and Asynchronous
+// Synchronous:-
+// It waits for Each operation to complete after that executes
+// the next operation
+// Asynchronous
+// it never waits for each operation to complete rather it executes 
+// all operation in the first go only
+// console.log("start");
+// setTimeout(()=>{
+//     console.log("settimeout");
+// },2000);//2000>2sec
+// console.log("end");
+// function a()
+// {
+//     console.log("Hello");
+// }
+// setTimeout(a,10000);
+// function my()
+// {
+//     console.log("Hello");
+// }
+// console.log("start");
+// my();
+// console.log("end");
+// async and await
+// async :-
+// this keyword is used to turn declaration async function
+// async function:- as  async function declare withe async
+// keyword  as async function is a function that known how to 
+// expect the possible of the await keyword being using to to 
+// invoke async code 
+// function a()
+// {
+//     return "hello";
+// }
+// a().then;
+// const a = ()=>{
+//     var d = "Hello";
+//     return d;
+// }
+// a().then(data=>console.log(data));
+
+// const get = async()=>{
+//     var d = "Hello";
+//     return d;
+// }
+// get().then(data=>console.log(data));
+// await:-
+// the await operator is used to wait for a Promise
+// it can only be use to inside a async function with
+// Regular js code 
+// const promise1 =  new Promise((resolve,reject)=>{
+//     setTimeout(function()
+//     {
+//         resolve("resolve")
+//     },100); //0.10 second  
+// });
+// async function my()
+// {
+//     let r = await promise1;
+//     console.log(r);
+//     console.log("hello");
+// }
+// my();
+// prototype:-
+// prototypes is used to inheritance the function and data 
+// from other object
+// const a = {name:"sumesh",city:"delhi",age:23,id:001};
+// const b = {name:"Anil"};
+// console.log(a);
+// console.log(b);
+// b.__proto__=a;
+// let str = "Rashmi";
+// console.log(str);
+Function.prototype.demo = function()
+{
+    console.log("Hello world");
+}
+function a1()
+{
+
+}
+
+
