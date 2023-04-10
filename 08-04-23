@@ -1,0 +1,133 @@
+// const a = [1,2,3];
+// how to add 4 and 5
+// first method:- push
+// a.push(4);
+// console.log(a);
+//second method:-concat
+// concat method is used to merge two and more then two array
+// var b = a.concat(5,6);
+// console.log(b);
+// const a = [1,2];
+// const b  = [3,4,5];
+// var c= a.concat(b);
+// console.log(c);
+// question:- const a = ["sumesh","rahul","Amit"]
+// add two name in array a
+// const a =["rajesh","mohith","nikhil"];
+// var b=a.concat("suresh","dinesh");
+// console.log(b);
+// const a =["sumesh","rahul","amit"];
+// const b =["osama","akshay"];
+// var c = a.concat(b);
+// console.log(typeof(c));
+// join method in js:-
+// the join method is used to Element of an array into string and return 
+// the string
+// const a = [1,2,3];
+// // output:-1A,2A,3A
+// var b = a.join("A");
+// console.log(b);
+// console.log(typeof(b));
+// const a = ["A","B","C","D",""];
+// var b = a.join(1);
+// console.log(b);
+// const b=["A","B","C","D",""];
+// var c=b.join("1");
+// console.log(c);
+// Map method in JS:-
+// map method is creates a new array and result of calling a provided 
+// function on every element map call a provided callbacl function once 
+// for each element in array on other return new array 
+// const a = [1,2,3];
+// var b = a.map(p);
+// function p(i)
+// {
+//     return i*4;
+//     // 1*4 = 4
+//     // 2*4 = 8
+//     //3*4 = 12
+// }
+// console.log(b);
+// console.log(typeof(b));
+// const array = [3,4,5,6,7,8];
+// const map1 = array.map(x => x + 2);
+
+// console.log(map1);
+// const a = [3,4,5,6,7,8];
+// var b = a.map(f);
+// function f(i)
+// {
+// return i +2;
+// }
+// console.log(b);
+// filter:-
+// without using filter method
+// const a = [1,2,3,4,5];
+// for(let i=0;i<a.length;i++)
+// {
+//     if(a[i]>2)
+//     {
+//         console.log(a[i]);
+//     }
+// }
+// using filter method:-
+// const a = [1,2,3,4,5];
+// const filter1 = a.filter(check); // check is name of function
+// function check(i)
+// {
+//     return i>2;
+// }
+// console.log(filter1);
+// try with filter method:-
+// const a = [ -3,-10,1,2,3,4]
+// const f1 = a.filter(b);
+
+// function b (i){
+// return i>2;
+// }
+// console.log(f1);
+// const f=[-3,-10,1,2,3];
+// const fil=f.filter(mass);
+// function mass(i){
+// if(i>2){
+// return i;
+// }
+// }
+// console.log(fil);
+// const array = [-3,-10,1,2,3,4];
+// const b1 = array.filter(x => x>2);
+// console.log(b1);
+// Reduces method:-
+// reduce come in es5 in 2009
+// the reduces method does not change the original Array
+// the reduce method does not execute the function for empty function
+// the reduce method return single value the function accumulated result
+// the rduces method execute a reducer function for array
+// const a = [1,2,4];
+// using for loop
+// output:-7  1+2+4 = 7;let 
+// let sum = 0;
+// for(let i=0;i<a.length;i++)
+// {
+//     sum = sum+a[i];
+// }
+// console.log(sum);
+// using reduce method
+// function r(accumulaator,currrentvalue)  
+
+// {
+//     return accumulaator + currrentvalue;
+// }
+// let b= a.reduce(r);
+// console.log(b);
+const  a = ["i ","am","fire"];
+console.log(a.join('-'));
+
+
+
+
+
+
+
+
+
