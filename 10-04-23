@@ -1,0 +1,173 @@
+// divide and conquar:-
+// divide:- divide the problem into smaller problem
+// conquer:- solve the problem by calling recursively until solved
+// combine:- combine the problem to get the final solution
+// categories of dsa 
+// 1)linear data structure
+// 2) non-linear data structure
+// linear :- Array,Queues,Stack,Linked List
+// non - linear:- graph,tree
+// Array:-
+// String:-
+// Array in js:-
+// Array is a special type of varible ,which is used to hold more then one varible
+// Syntax:-
+// const a = [item1,item2];
+// how to creating an array using new keyword:-
+// const b = new Array("sumesh","Rahul","Amit");
+// console.log(b);
+// const a = ["Sumesh","Rahul","Amit"]
+// console.log(a);
+// Question:-create an array using new  keyword:-
+// const b = new Array(1,2,3,4);
+// console.log(b);
+// pop method:-
+// the pop method remove the last elemnt of an array
+// const a = [1,2,3,4];
+// console.log(a.pop());
+// const a = ["rahul","Amit","Sumesh"];
+// var b = a.pop();
+// console.log(b);
+// push method:- 
+// the push method add a new elemnt in an array (at the end)
+// const a = [1,2,3,4];
+// console.log(a.push(5));
+// const b = ["1999","2000","2001"];
+// console.log(b.push(2002));
+// console.log(b);
+// shift method:-
+// the shift method remove the first array element and shift all other element
+// const a = [1,2,3];
+// console.log(a.shift(1));
+// console.log(a);
+// unshift method:-
+// the unshift method add a new array in the first index and beginning
+// const a = [1,2,3,4];
+// console.log(a.unshift(6));
+// console.log(a);
+//  the concat method creates the new Array by adding two array
+// const a = [1,2,3];
+// const b = [4,5];
+// const c = a.concat(b);
+// console.log(c.length);
+// Ques:-
+// const a = [1,2,3,4];
+// var b = a.indexOf(3);
+// console.log(b);
+
+// return index of 3
+// Ques:- const b = [1,2,3,4]=>4,3,2,1
+// reverse an array
+// const a = [1,2,3,4];
+// const temp = []; // 
+// for(let i=a.length-1;i>=0;i--)
+// {
+//     console.log(a[i]);
+//     temp.push(a[i]);
+
+// }
+// console.log(temp);
+// const a  =[1,3,2,4];
+// console.log(a.sort());
+// output:-1,2,3,4
+// Ques:-find the min and max Element in array using sort method
+// const a  = [ 4,3,3,6,7,8];
+// console.log(a.sort());
+// var min = a[0];
+// var max = a[a.length-1];
+// console.log(min);
+// console.log(max);
+// const a  = [ 4,3,3,6,7,8]; 4+4+3+6+7+8 = 31output
+// sum of Element  in Array do using for loop
+// const a  = [ 4,3,3,6,7,8];
+// let sum = 0;
+// for(let i=0;i<a.length;i++)
+// {
+//     sum = sum + a[i];
+// }
+// console.log(sum);
+// String:-
+// the string i used represent and manipulates a sequence of Character
+// string is the collections of Character
+// str1 = "sumesh";
+// Str2 = 'S';
+// console.log(typeof(str1));
+// console.log(typeof(str2));
+// str1 = "sds"
+// str2 = 'c'; 
+// console.log(typeof(str1))
+// console.log(typeof(str2))
+// how to creates the string 
+// let a = "Sumesh";
+// console.log(a);
+// creates the string using new keyword:-
+// const b = new String("hi my name is sumesh");
+// console.log(b);
+// method of String:-
+// length:-
+// const a = "Sumesh";
+// console.log(a.length);
+// Slice:-
+// slice method is used to extracts a part of string
+// let  a = "my name is sumesh";
+// let b = a.slice(3,9);
+// console.log(b);
+// replace :-
+// let a = "my name is sumesh";
+// let r = a.replace("sumesh","Amit");
+// console.log(r);
+// uppercase:-
+// let a = "Sumesh";
+// let b = a.toUpperCase();
+// console.log(b);
+// trim:-
+// trim method remove whitespaces from both end side
+// let a = "        my name is sumesh    ";
+// let b = a.trim();
+// console.log(b);
+// indexof
+// let a = "my name is sumesh";
+// let b = a.indexOf("sumesh");
+// console.log(b);
+// lastindexof
+// let a = "my name is sumesh and sumesh";
+// let b = a.indexOf("sumesh");
+// let c = a.lastIndexOf("sumesh");
+// ques:- let a = "my name is sumesh";
+// print only name is(extarct the part of string)
+// let a="my name is sumesh";
+// console.log(a.slice(3,10));
+// let a = "my name is sumesh";
+// let b = a.slice(3,11);
+// console.log(b);
+// let a = "my name is sumesh";
+// let count = 0;
+// // count s in string  s = 3;
+// let key  = "s";
+// for(let i=0;i<a.length;i++)
+// {
+//     if(a[i]==key)
+//     {
+//         count++;
+
+//     }
+// }
+// console.log(count);
+// reverse an string
+
+// a = "Sumesh"
+// output:-hsemus
+function reverse(str)
+{
+var str1="";
+for(var i=str.length-1;i>=0;i--)
+{
+str1 += str[i];h,s,e,m,u,s
+}
+return str1;
+}
+// let str="sumesh";
+let str = "Amit";
+console.log(reverse(str));
+
+
