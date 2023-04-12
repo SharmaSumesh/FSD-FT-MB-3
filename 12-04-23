@@ -1,0 +1,139 @@
+// let a = 123;
+// // output:-321
+// let result = 0;
+// while(a>0)
+// {
+//     temp = a%10 0.3*10
+//     result = result*10+temp;
+//     a = Math.floor(a/10);
+// }
+// console.log(typeof(result));
+// const a = [1,2,3];
+// const b = [4,5];
+// merge a and b
+// output:- [1,2,3,4,5];
+// const a = [1,2,3];
+// const b = [4,5];
+// const c = a.concat(b);
+// console.log(c);
+// let a = "AAABBCCD";
+// function comp(a,n)
+// {
+//     var s = new Set();
+//     for(var i=0;i<n;i++)
+    
+//         s.add(a[i]);
+//         for(const v of s)
+//         {
+//             console.log(v)
+//             // document.write(v);
+//         }
+//     }
+    
+
+// var a = "AAAABBBCCD";
+//     var n = a.length;
+//     console.log(comp(a,n));
+
+// second method:-
+// let a = "AAABBCCD";
+// let count = 1;
+// let r = "";
+// for (let i = 0; i < a.length; i++) {
+// if (a.charAt(i) === a.charAt(i+1)) {
+// count++;
+// } else {
+// r += a.charAt(i) + count;
+// count = 1;
+// }
+// }
+// console.log(r);
+// linear Search:-
+// linear search traverse through the given list and array using for
+// loop .if Element is found it return 1 and index and otherwise
+// return -1 and not found
+// Time complexity:- O(n)
+// const a = [1,2,3,4,5];
+// key  = 3;
+// function linear(a,key)
+
+// {for(let i=0;i<a.length;i++)
+// {
+//     if(a[i]==key)
+//     {
+//         return 1;
+//     }
+
+// }
+// return -1;
+// }
+// console.log(linear(a,key));
+// Ques:-const a = ["Amit ","Rahul","Kapil","Sumesh"]
+// key  = "Amit";
+// check Amit in list or not
+// const a = ["Amit ","Rahul","Kapil","Sumesh"]
+// key  = "Amit";
+// function check(a,key)
+// {
+//    for(let i=0;i<a.length;i++)
+//    {
+//     if(a[i]==key)
+//     {
+//         return 1;
+//     }
+//    }
+//    return -1;
+
+// }
+// console.log(check(a,key));
+// Binary Search:-
+// Binary search is a searching technique which work on divide 
+// and conquar approch
+// it is used to search the an Element in a sorted Array
+// it faster then linear search 
+// the time complexity is O(logN)
+// ex:-
+
+
+function a(arr, x) {
+  
+    let start=0, end=arr.length-1;
+         
+  
+    while (start<=end){
+ 
+   
+        let mid=Math.floor((start + end)/2);
+  
+     
+        if (arr[mid]===x) return true;
+ 
+      
+        else if (arr[mid] < x)
+             start = mid + 1;
+        else  // arr[mid] >x
+             end = mid - 1;
+    }
+  
+    return false;
+}
+  
+const arr = [1,2,3,4,5];
+let x = 10;
+if(a(arr,x,0,arr.length-1)) // arr = >array x = key 0 = start, arr.length-1 = last index
+console.log("we found");
+else
+console.log("we not found");
+
+// Time Complexity and Space Complexity:-
+// Time Complexity
+// ex:-1)
+console.log("Hello")
+// ex:-2)
+console.log("Hello")
+console.log("Hello")
+//tim complexity of an algorithm the amount of 
+// time taken by algorithm to run as function of 
+// the length of the input
+// 1)best case:-
+
