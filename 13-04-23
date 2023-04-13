@@ -1,0 +1,323 @@
+// Ques:-const a  = ["Amit","Rahul","Kapil","Sumesh"];
+// key  = "kapil"
+// search key using Binary search
+// const a  = [ 'Amit', 'Kapil', 'Rahul', 'Sumesh' ];
+// // key  = "kapil"
+// // first sort the array
+// let binarysearch = function(a,key)
+// {
+//     let start = 0;
+//     end = a.length-1;
+//     while(start<=end)
+//     {
+//         let mid = (start+end)/2;
+//         if(a[mid]==x)
+//         {
+//             return true;
+//         }
+//         else if(a[mid]<x)
+//         {
+//             start = mid+1;
+//         }
+//         else
+//         {
+//             end = mid-1;
+//         }
+//     }
+//     return false
+// }
+// Best case:- Taking only one  operation 
+// TC:- O(1)
+// const arr = [1,2,3,4,5];
+// key  = 1;
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(arr[i]==key)
+//     {
+//         console.log(arr[i])
+//     }
+// }
+// Avg Case:- 
+
+// Taking more time as comapre to best case to search the Element 
+// const arr = [1,2,3,4,5];
+// key  = 3;
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(arr[i]==key)
+//     {
+//         console.log(arr[i])
+//     }
+// }
+// worst case:-
+// perform all operation to check Element  
+// const arr = [1,2,3,4,5];
+// key  = 5;
+// // TC:-O(N)
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(arr[i]==key)
+//     {
+//         console.log(arr[i])
+//     }
+// }
+// ex:-
+// for(let i=0;i<n;i++)
+// {
+//     console.log(i);
+// }
+// cls
+
+// for(let i=0;i<n;i++)
+// {
+//     for(let j= 0;j<n;j++)
+//     {
+//         console.log(i);
+//     }
+// }
+// TC = n*n = N2
+// for(let i=0;i<n;i++)
+// {
+//     console.log(i);
+// }
+// for(let j=0;j<n;j++)
+// {
+//     console.log(j);
+// }
+// n+n = 2n = n
+// let a = 4;
+// let  b = 4;
+// console.log(a+b);
+// n = 10;
+// for(let i=0;i<n;i++)
+// {
+//     console.log(i);
+// }
+// O(N);
+// for(let i=0;i<n;i++) // outer loop 
+// {
+//     for(let j=0;j<n;j++) // inner loop
+
+//     {
+//         console.log(i)
+//     }
+// }
+// TC:- n*n = n2
+// Sc:-
+// The amount of memory required by the function
+// to solve  the given problem is called 
+// Space complexity
+// let a = 3;
+// let b = 4;
+// let c = a+b;
+// console.log(c);
+// Sc:-0(1);
+// let sum =0;
+// for(let i=0;i<n;i++)
+// {
+//     sum = sum + a[i];
+
+// }
+// Recursion:-
+// A recursion is process of calling itself
+// a function  that called itself is called
+// a recursion
+// a recursion function must have a condition to stop the function
+// this is called base case 
+// Synatx:-
+// function a()
+// {
+//     a();
+// }
+// a();
+// function count(num)  //name count
+// {
+//     console.log(num);
+//     const new1 = num-1;
+//     if(new1>0) // base case
+//     {
+//         count(new1); //calling 
+//     }
+// }
+// count(5);
+// sum 1 to 10
+// sum = 0;
+// for(let i=0;i<=10;i++)
+// {
+//     sum = sum +i;
+// }
+// console.log(sum);
+// function sum(num)
+// {
+//     if(num==0)  //base case
+//     {
+//         return 0;
+//     }
+//     return num + sum(num-1);
+// }
+// console.log(sum(10));
+// Factorial of number :-
+function fact(num)
+{
+    if(num==1)
+    {
+        return 1;
+    }
+    return num*fact(num-1);
+}
+console.log(fact(3));
+//  multiple 1 to n using recursion 
+// 4 = 1*2*3*4 = 24
+// 6  = 1*2*3*4*5*6 = 
+// mul = 1;
+// n = 4;
+// for(let i=0;i<=n;i++)
+// {
+//     mul = mul*i;
+// }
+// console.log(mul);
+// function multiply(n) {
+
+//     if (n === 1) {
+//     return 1;
+//     }
+    
+    
+//     return n * multiply(n - 1);
+//     }
+    
+    
+//     const n = 5;
+//     const result = multiply(n);
+//     console.log(result);
+//     Stack in js:-
+    // Stack is linear data structure in which addition or 
+    // removal of Element follow as particular ondragover
+    // LIFO(Last in first out) and FILO(First in last last out) 
+    // operations in Stack
+    // 1)push
+    // 2)pop
+    // 3)peek
+    // 4)isempty
+    // 5)isfull
+    // 6)clear
+    // push operation:-
+    // push operation involves inseration new Element in the Stack
+    // pop operation:-
+    // pop operation is used to remove the last Element in the stack
+    // peek:-
+    // peek operation refer to retrieving the topmost in the stack without
+    // removing it from stack
+    // isfull:-
+    // is full is used to check whether or not stack is full or not
+    // isEmpty()
+    // isEmpty is used to check whether stack is empty  
+    // class Stack{
+    //     constructor()
+    //     {
+    //         this.items = [];
+    //     }
+    //     //add function
+    //     add(element)
+    //     {
+    //         return this.items.push(element);
+    //     }
+    //     remove()
+    //     {
+    //         if(this.items.length>0)
+    //         {
+    //             return this.items.pop();
+    //         }
+
+    //     }
+    //     checkpeek()
+    //     {
+    //         return this.items[this.items.length-1];
+    //     }
+    //     // check isEmpty
+    //     isEmpty()
+    //     {
+    //         return this.items.length==0;
+    //     }
+    //     isfull()
+    //     {
+    //         return this.items.length;
+    //     }
+    //     clear()
+    //     {
+    //         this.items = [];
+    //     }
+    // }
+    // let s = new Stack();
+    // s.add(1);
+    // s.add(2);
+    // s.add(3);
+    // console.log(s.items);
+    // // how to remove
+    // // stackname.name of function
+    // s.remove();
+    // console.log(s);
+    // console.log(s.isEmpty());
+    // s.clear();
+    // console.log(s.items);
+    // class Stack{
+    //     constructor()
+    //     {
+    //         this.items = [];
+    //     }
+    //     // push function for stack
+    //     add(element)
+    //     {
+    //         return this.items.push(element);
+    //     }
+    //     // delete or pop function
+    //     remove()
+    //     {
+    //         if(this.items.length>0)
+    //         {
+    //             return this.items.pop();
+    //         }
+    //     }
+    //     //isEmpty()
+    //     isEmpty()
+    //     {
+    //         return this.items.length ==0;
+    //     }
+    //     //is size()
+    //     size()
+    //     {
+    //         return this.items.length;
+    //     }
+    //     //isclear
+    //     clear()
+    //     {
+    //         this.items = [];
+    //     }
+    // }
+    // let a = new Stack();
+    // a.add(1);
+    // a.add(2);
+    // a.add(3);
+    // console.log(a.items);
+    // perform  operation of stack(push)
+    // Push("Amit");
+    // Push("Sumesh");
+    // Push("Rahul");
+    // Push("deepak");
+    class Stack{
+            constructor()
+            {
+                this.items = [];
+            }
+            // push function for stack
+            add(element)
+            {
+                return this.items.push(element);
+            }
+}
+let new1 = new Stack();
+new1.add("Amit");
+new1.add("Sumesh");
+new1.add("Rahul");
+new1.add("deepak");
+console.log(new1.items)
