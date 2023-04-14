@@ -1,0 +1,227 @@
+// const arr= [1, 2, 3, 4, 5];
+// let  K = 4;
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(arr[i]==K)
+//     {
+//         console.log(i);
+//     }
+// }
+// TC:O(N);
+// using BInary search:-
+// function check(arr,K)
+// {
+//     var first = 0;
+//     var last = arr.length-1;
+//     mid =  Math.floor(last-first)/2;
+//     while(first<=last)
+//     {
+//         if(arr[mid]==key)
+//         {
+//             return mid;
+//         }
+//         else if(arr[mid]<key)
+//         {
+
+//         } 
+//     } 
+
+// }
+// function a(arr,key)
+// {
+// let start = 0;
+// let end = arr.length-1;
+// while(start<=end)
+// {
+// let mid=Math.floor((start + end)/2);
+
+
+// if (arr[mid]===key) return true;
+
+
+// else if (arr[mid] < key)
+// start = mid + 1;
+// else
+// end = mid - 1;
+// }
+// return false
+// }
+// const arr =[1,2,3,4,5];
+// let key = 3;
+// if(a(arr,key,0,arr.length-1)){
+// console.log(arr.indexOf(key));
+// }
+// const a = [4,3,5,68,9];
+// const key  = 68;
+// for(let i=0;i<a.length;i++)
+// {
+//     if(a[i]==key)
+//     {
+//         console.log(i)
+//     }
+// }
+// const a = [1,1,2,2,3,3,4];
+
+// const arr = [1,1, 2,2, 3,3, 4,];
+// const newArr = arr.filter((value, index, self) => {
+// return self.indexOf(value) === index;
+// });
+// console.log(newArr);
+// let  a = [1,1,2,2,3,3,4];
+ 
+    // function check(arr) {
+    //     let arr2 = [];
+    //     a.forEach(element => {
+    //         if (!arr2.includes(element)) {
+    //             arr2.push(element);
+    //         }
+    //     });
+    //     return arr2;
+    // }
+ 
+    // console.log(check(a));
+    // Queue in js:-
+    // A queue is an ordered list of Element where an Element is inserted at the end and 
+    // the removed from the front of the queue
+    //  A queue has two operations:-
+    //  1) Insert :- insert a new Element at the end of the queue is called enqueue
+    //  2) Remove :- Remove an Element the front of the queue is called dequeue
+    // peek:-  A queue is geeting the Element at the front called peek
+    // Method of Queue:-
+    // enqueue:- the enqueue method add to the queue
+    // Dequeue:- remove the Element from the queue
+    // peek:- the peek method return the first Element from the queue
+    // size:- the size method is used to check total size of queueMicrotask
+    // isEmpty:- isEmpty is used to check my Queue is empty or not
+    // clear:- clear the and reset the queue
+    // types of Queue:-
+    // 1)Simple Queue:-
+    // 2)circular Queue:-
+    // 3)priority Queue:-
+    // 4)double ended Queue:-
+    // Simple Queue:-
+    // in simple Queue inseration place from the end and remove from FormDataEvent.it follow the 
+    // FIFO(first in first out)
+    // Circular Queue:-
+    // in a circular Queue the last Element point to the first Element
+    // Double Ended Queue (Dqueue):-
+    // in a double ended queue inseration and removel of Element can be performed from either
+    // from the front or rear .
+    // thus it does not follow the FIFO
+//     class Queue{
+//         constructor()
+//         {
+//             this.items = {};
+//             this.head = 0;
+//             this.tail = 0;
+//         }
+//         // add to new element
+//         enqueue(element)
+//         {
+//         this.items[this.tail] = element;
+//         this.tail++;
+//         }
+//         //remove the element
+//         dqueue()
+//         {
+//         let remove = this.items[this.head];
+//         delete this.items[this.head];
+//         this.head++;
+//         return remove;
+//         }
+//         // peek show the head element of the queue
+//         peek()
+//         {
+//             let peek1= this.items[this.head];
+//             return peek1;
+//         }
+//         //size is used to check the size of queue
+//         size()
+//         {
+//             return this.tail  - this.head;
+//         }
+//         //isempty is used to check queue is empty is not 
+//         isEmpty()
+//         {
+//             if(this.tail-this.head==0)
+//             {
+//                 return true;
+//             }
+//             else
+//             {
+//                 return false;
+//             }
+//         }
+//         // clear is used to  empty the queue
+//         clear()
+//         {
+//             this.items = {};
+//             this.head = 0;
+//             this.tail = 0;
+//         } 
+//     }
+//     let a = new Queue();
+//    // now add
+//    a.enqueue(1);
+//    a.enqueue(2);
+//    a.enqueue(3);
+//    a.enqueue(4);
+//    console.log(a.items); 
+//    a.dqueue();
+//    console.log(a.items);
+//    console.log(a.isEmpty());
+//    a.clear();
+//    console.log(a.items);
+// class Queue
+// {
+//     constructor()
+//     {
+//         this.items = {};
+//         this.head = 0;
+//         this.tail = 0;
+//     }
+//     //add function
+//     enqeue(element)
+//     {
+//         this.items[this.tail] = element;
+//         this.tail++;
+//     }
+//     // remove
+//     dequeue()
+//     {
+//         let remove = this.items[this.head];
+//         delete this.items[this.head];
+//         this.head;
+//         return remove;
+//     }
+    
+// }
+// let a = new Queue();
+// a.enqeue(1);
+// a.enqeue(2);
+// a.enqeue(3);
+// console.log(a.items);
+class Queue
+{
+constructor()
+{
+this.items = {};
+this.head = 0;
+this.tail = 0;
+}
+//add function
+enqeue(element)
+{
+this.items[this.tail] = element;
+this.tail++;
+}
+// remove
+}
+let a = new Queue();
+a.enqeue(1);
+a.enqeue(2);
+a.enqeue(3);
+a.enqeue(4);
+console.log(a.items);
+
+
