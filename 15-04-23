@@ -1,0 +1,88 @@
+// creates the stack and perform add to remove operations
+// creates the Queue and perform add to remove operations
+// 1)
+// class Stack
+// {
+//     constructor()
+//     {
+//         this.items = [];
+//     }
+//     add(element)
+//     {
+//         return this.items.push(element);
+//     }
+//     remove()
+//     {
+//         if(this.items>0)
+//         {
+//             return this.items.pop();
+//         }
+//     }
+// }
+// 2)
+// class Queue
+// {
+//     constructor()
+//     {
+//     this.item = [];
+//     this.head = 0;
+//     this.tail = 0;    
+//     }
+//     enqueue(element) //add the items in tail
+//     {
+//         this.item[this.tail] = element;
+//         this.tail++;
+//     }
+//     dequeue() //delete the item in head
+//     {
+//         let remove = this.items[this.head];
+//        delete this.items[this.head];
+//        this.head++;
+//       return remove;
+//     }
+
+// }
+// Linked List in js:-
+// A linked list is a linear data structure simliar to array 
+// unlike array Element are not stored in a particular memory loction
+// or index. 
+// linked list contain a pointer or link to the next object in list  
+// Each Element is called conatins two items the data stored and a link to 
+// the next node
+// Types of linked list:-
+// there three types of linked list:-
+// Singly linked list:-
+// doubly linked list:-
+// circular linked list:-
+// Singly linked list:-
+// Each node contains only one pointer to the next node .is known as 
+// Singly linked list
+// operation in single linked list:-
+// insert:- add the item in linked FileList
+// delete :- delete the node and item in the beginning of the FileList
+// delete at the end :-  delete the node at the end of FileList
+// delete at the pos:- delete the node specific pos of the list
+// insert at any pos = insert the Element at any pos
+// doubly linked list:-
+// a doubly linked list is a linear data struture that represent 
+// a collection of Element where each Element point both to the next and
+// the previous one the first Element in the doubly linked list  
+// next :- a pointer to the next Element
+// previous :- a pointer to the previous  Element
+// Method in Doubly linked list:-
+// insertAt:- insert at Element in specific index
+// removeAt:- Removes the Element in specific index 
+// getAt:- Retrieves the Element at the specific index
+// clear:- clear and empty the linked list
+// Circular linked list:-
+//  A circular Linked list is a variation of linked list in which there 
+//  is no end of to the list the last node Element of the list point the 
+//  first Element and no null exist all nodes are connect in circle
+// operations of circular Linked list:-
+// append(Element):- add the item in the list
+// remove():- remove the Element in the list at any pos
+// insert(pos,Element) = add the item to given pos 
+// getelementAt(pos)= return the node at the given pos in the list
+// size():- check the size of list
+// isEmpty():- check the list empty or not 
+
