@@ -1,0 +1,157 @@
+// // creation of Linked List:-
+// class LinkedList {
+//     constructor() {
+//       this.nodes = [];
+//     }
+  
+//     get size() {
+//       return this.nodes.length;
+//     }
+  
+//     get head() {
+//       return this.size ? this.nodes[0] : null;
+//     }
+  
+//     get tail() {
+//       return this.size ? this.nodes[this.size - 1] : null;
+//     }
+  
+//     insertAt(index, value) {
+//       const previousNode = this.nodes[index - 1] || null;
+//       const nextNode = this.nodes[index] || null;
+//       const node = { value, next: nextNode };
+  
+//       if (previousNode) previousNode.next = node;
+//       this.nodes.splice(index, 0, node);
+//     }
+  
+//     insertFirst(value) {
+//       this.insertAt(0, value);
+//     }
+  
+//     insertLast(value) {
+//       this.insertAt(this.size, value);
+//     }
+  
+//     getAt(index) {
+//       return this.nodes[index];
+//     }
+  
+//     removeAt(index) {
+//       const previousNode = this.nodes[index - 1];
+//       const nextNode = this.nodes[index + 1] || null;
+  
+//       if (previousNode) previousNode.next = nextNode;
+  
+//       return this.nodes.splice(index, 1);
+//     }
+//     // if you want to clear the Linked list
+//     clear()
+//     {
+//         this.nodes = [];
+//     }
+  
+  
+   
+//   }
+//   const a1 = new LinkedList();
+//   a1.insertFirst(1);
+//   console.log(a1);
+//   a1.insertLast(2);
+//   console.log(a1);
+//   let c = a1.size;
+//     console.log(c);
+// Doubly Linked List 
+// class DoublyLinkedList
+// {
+//     constructor()
+//     {
+//         this.nodes = [];
+//     }
+//     get size()
+//      {
+//         return this.nodes.length;
+//     }
+//     get head() {
+//               return this.size ? this.nodes[0] : null;
+//             }
+//     get tail() {
+//         return this.size ? this.nodes[this.size - 1] : null;
+//         }
+//         insertAt(index, value) {
+//                   const previousNode = this.nodes[index - 1] || null;
+//                   const nextNode = this.nodes[index] || null;
+//                   const node = { value, next: nextNode };
+              
+//                   if (previousNode) previousNode.next = node;
+//                   this.nodes.splice(index, 0, node);
+//                 }
+//                 insertFirst(value) {
+//                           this.insertAt(0, value);
+//                         }
+//                         insertLast(value) {
+//                                   this.insertAt(this.size, value);
+//                                 }
+                              
+//                                 getAt(index) {
+//                                   return this.nodes[index];
+//                                 }
+                              
+//                                 removeAt(index) {
+//                                   const previousNode = this.nodes[index - 1];
+//                                   const nextNode = this.nodes[index + 1] || null;
+                              
+//                                   if (previousNode) previousNode.next = nextNode;
+                              
+//                                   return this.nodes.splice(index, 1);
+//                                 }
+//                                 // if you want to clear the Linked list
+//                                 clear()
+//                                 {
+//                                     this.nodes = [];
+//                                 }
+                              
+                      
+                  
+
+          
+
+// }
+// const c1 = new DoublyLinkedList();
+// c1.insertFirst(1);
+// c1.insertLast(2);
+// console.log(c1);
+// Tree in js:-
+// A tree is a data structure of a set of linked
+// nodes that represnt a hierarchical tree structure.Each nodes is linked to other nodes
+// via parent-child relationship
+// // the first node  is of the tree is root and other nodes are the child and leap
+// parent:-the parent of the node (null if there is none)
+// root:-the root node is top node of the TreeWalker
+// child:- child is the descending of an any node
+// sibling:- the nodes having same parent 
+// leaf:- the node of the tree which doesnt have any child
+// operations and method in tree:-
+
+
+// insert and add operation:-
+// insert the node as child of the given parent node
+
+// remove the child 
+// removes a node and its child from the tree
+
+// find:-
+// retrieves a given nodes
+
+// preorder:-
+// Traverse the tree by recursively traversing each nodes followed by its chidern
+
+// postorder:-
+// TRaverse the tree by recursively traversing each nodes chidern followed by its nodes
+// Binary Seatch tree :-
+// Binary search is a data structure that quickly allow us to maintain a sorted list of Number
+// it is called binary search because each tree node has a max two child 
+// TC:- O(logn)
+// some properties of BST:- 
+all nodes of the left subtree is less then the Root
+all nodes of the right  tree is more then the root
