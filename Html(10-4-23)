@@ -1,0 +1,27 @@
+<!DOCTYPE html> :- Define the document as an html5
+<html></html>: root element of html5
+<head></head>:- conatin the information about the document
+<title></title>:- conatin the title of browser
+<body></body>:- conatin the all contents like heading paragraph image etc
+<h1>Sumesh</h1> h1 => h1 is the tag and sumesh is ddta
+<p>hi name is sumesh</p> 
+heading in html 
+there are six type of heading 
+h1,h2,h3,h4,h5,h6
+bigest:- h1
+smallest:- h6
+what is <p></p>  tag:-
+it used to write the paragraph of in html 
+HTML Attributes:-
+All Html element can have Attributes
+HTML formatting element
+<b> = >bold text
+<strong>=>important text
+<i>=>convert the word in italic text
+<em> Empphasized text
+<mark>marked text
+<Small>Smaller text
+<Del> delete the text 
+<ins>inserted the text
+<sub>subscript text
+<sup> superscript text
