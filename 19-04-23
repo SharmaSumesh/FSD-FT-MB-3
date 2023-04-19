@@ -1,0 +1,118 @@
+// Graph:-
+// A Graph is a non linear data structure consist of vertices and edges.
+// sometimes vertices are called nodes and edges lines that join the two nodes
+// more graph composed of a set of vertices and set of edges
+// the graph is denoted by:-
+// G(E,v)
+//   E:-edges
+//   v:- vertices
+// edges:- edges are drawan or used to connect two nodes of the graph it 
+// can be orderded pair of nodes in a directed graph edges can be connect
+// any two nodes in any possible way 
+// vertices:-vertices are also known a vertex or node Every node  can be 
+// labelled or unlabelled
+// types of Graph:-
+// undirected graph:- 
+// the edges have no direction
+// directed graph:-
+// the edges have direction
+// weighted Graph:-
+// A graph in which edges have weight or cost associated with them
+// unweighted Graph:-
+// A graph in which edges have no weight or cost associated with them
+// complete Graph:-
+// A graoh in which each nodes is connect Every node of graph
+// class Graph
+// {
+//     constructor()
+//     {
+//         this.data = {};
+//     }
+//     // add operation 
+//     // remove operation 
+//     //insert at pos
+//     // check size
+//     // check empty or not
+// }
+// class Graph
+// {
+//     constructor()
+//     {
+//         this.data = {};
+//     }
+//     //add operation
+//     add(vertex)
+//     {
+//         if(!this.data[vertex])
+//         {
+
+//             this.data[vertex] = [];
+//         }
+//     }
+//     // add edge
+//     addEdge(v1,v2)
+//     {
+//         if(!this.data[v1])
+//         {
+//             this.add(v1);
+//         }
+//         if(!this.data[v2])
+//         {
+//             this.addEdge(v2);
+//         }
+//         this.data[v1].push(v2);
+//         this.data[v2].push(v1);
+
+//     }
+//     // remove 
+//     remove(v1,v2)
+//     {
+//         this.data[v1] = this.data[v1].filter((item)=>
+//         {
+//             return item !=v2;
+//         });
+//         this.data[v2] = this.data[v2].filter((item)=>
+//         {
+//             return item !=v1;
+//         });
+//     }
+    
+//     removevertex(vertex)
+//     {
+//         if(!this.data[vertex])
+//         {
+//             return;
+//         }
+//         for(let item of this.data[vertex])
+//         {
+//             this.remove(vertex,item);
+//         }
+//         delete this.data[vertex];
+//     }
+// }
+
+// // const a = new Graph();
+// // a.add(1);
+// // a.add(2);
+// // a.add(3);
+// // console.log(a.data);
+// const b  = new Graph();
+// b.add("A");
+// b.add("Amit");
+// b.add("Sumesh");
+// console.log(b);
+// BFS:- Breadth-first Search is a vertex based technique for finding the 
+// short pat in the graph it used the queue method(FIFO) 
+// in bfs one vertex is select at a on etime when it is visted and marked 
+// them it adjacent are visted and stored in the queue 
+// DFS:-
+// the DFS is Depth first Search is a edge based technique it uses the stack data Structure
+// and perform two stages first visited  vertex are push in stack and second of there 
+// are no vertex then visited are poped
+// Adjacency List:-
+// An Adjacebcy list is an array consist of the address of the linked list 
+// the first node of the linked list represnt the vertex and the remainimg 
+// list connected of this node
+// Adjacency Matrix:-
+// Adjacency matrix is 2D array size m*N where m = number of vertex in a graph n = 
+// nuumber of vertex in matrix 
