@@ -1,0 +1,153 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            color: white;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+        @keyframes example
+        {
+          0%
+          {
+            background-color: aqua;
+          }    
+          20%
+          {
+            background-color: pink;
+          }
+          50%
+          {
+            background-color: black;
+
+          }
+          100%
+          {
+            background-color: yellow;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="a">1</div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            color: black;
+            padding-top: 20px;
+            text-align: center;
+            animation-name: div;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+        @keyframes div
+        {
+            0%
+            {
+                background-color: aqua;
+                margin-top: 0%;
+                margin-left: 0%;
+            }
+            25%
+            {
+                background-color: black;
+                
+                margin-left: 25%;
+            }
+            50%
+            {
+                background-color: yellow;
+                margin-left: 50%;
+            }
+            100%
+            {
+                background-color: pink;
+                margin-left: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hello</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div
+        {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            animation: color1 5s;
+        }
+        .first
+        {
+            animation-timing-function: linear;
+            
+        }
+        .second
+        {
+            animation-timing-function: ease;
+        }
+        .third
+        {
+            animation-timing-function: ease-in;
+        }
+        .fourth
+        {
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes color1
+        {
+            from 
+            {
+                margin-left: 0px;
+
+            }
+            to
+            {
+                margin-left: 400px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="first">1</div>
+        <div class="second">2</div>
+        <div class="third">3</div>
+        <div class="fourth">4</div>
+    </div>
+</body>
+</html>
