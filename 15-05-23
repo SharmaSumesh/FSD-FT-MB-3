@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conatiner">
+        <div id="newtask">
+            <label>Name</label>
+            <input type="text" placeholder="Enter the name">
+            <button id="push">Submit</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+</body>
+<script src="Script.js"></script>
+</html>
+<!-- Local storage: - -->
+the local storage is a read only properties of window object 
+ot store the dat ain web browser specifically to the domain and 
+protocal it doesnt get sent the server as it locally in the web browser 
+with no expire date 
+the data is close and deleted when browser is close  -->
+<!-- Session storage -->
+Synatx:- 
+
+<!-- window.localStorage -->
+<!-- method:- 
+setItem(key,value)=>it allow to add key and value pair to the storage 
+object 
+getitem(key) => it freturn the value of item 
+key(n) => it return the key of the item of the storage object 
+removeItem(key)=>it remove the item i n the storage object withe given key  -->
+<!-- Session storage:-  -->
+<!-- Session storage allow you store the data and not send any server but for particular 
+time -->
+<!-- Cookies:- -->
+<!-- Window location:-= -->
+<!-- window.location used to  get the url of page address and redirect to the 
+another page  -->
+<!-- Synatx: - window.location 
+1)window.location.href=>return  the url of page =>www.google.com 
+2)window.location.hostname =>return the host of webpage 
+3)window.location.pathname=> return the path of window 
+4)window.location.protocal => return the prtocal of page http or https
+5) window.location.assign = >return a new page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+<script>
+    document.getElementById("demo").innerHTML = window.location.assign;
+</script>
+</html>
+
+Window History :- 
+back: - go to back to browser
+forward: - click to go forward to web browser 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="forward()">forward</button>
+    <button onclick="backward()">backward</button>
+</body>
+<script>
+    function forward()
+    {
+        window.history.forward();
+    }
+    function backward()
+    {
+        window.history.back();
+    }
+</script>
+</html>
+// // var a;
+// // console.log(a);
+// // // NaN:- 
+// // // Not a Number 
+// // var a  =2
+// // console.log(isNaN(a));
+// "use strict"
+//  x = 2;
+// console.log(x);
+// var y = 3;
+// console.log(y);
+// var x;
+// x = 3;
+
+// console.log(x);
+// var x;
+// x= 4;
+// console.log(x);
+// x= 10;
+// console.log(x);
+// const x;
+
+// var y  = 19;
+// console.log(y);
+var x;
+
+x = 34;
+console.log(x);
+
+var y;
+y = 45;
+console.log(y);
+call:-
+const obj = 
+{
+    name:"sumesh",
+    last:"sharma",
+    fulldata:function()
+    {
+        return this.name+" "+this.last;
+    }
+}
+console.log(obj.fulldata());
+const obj2  = 
+{
+    name:"Amit",
+    last:"kumar"
+}
+const obj3 = 
+{
+    name:"rahul",
+    last:"Dev"
+}
+console.log(obj.fulldata.call(obj2));
+console.log(obj.fulldata.call(obj3));
+// apply:-
+
+
